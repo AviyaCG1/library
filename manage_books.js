@@ -33,7 +33,7 @@ function createRemoveCell(){
 
 function removeBook(e){
     let row = e.target.parentNode;
-    booksList.splice(row.rowIndex-1, 1);
+    booksList.splice(row.rowIndex-2, 1);
     row.remove();
 }
 
