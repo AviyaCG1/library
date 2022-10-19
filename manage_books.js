@@ -1,10 +1,12 @@
 const MY_BOOKS = document.querySelector('#books');
 
-function Book(title, author, genre="fantasy", read=true){
-    this.title = title;
-    this.author = author;
-    this.genre = genre;
-    this.read = read;
+class Book{
+    constructor(title, author, genre="fantasy", read=true){
+        this.title = title;
+        this.author = author;
+        this.genre = genre;
+        this.read = read;
+    }
 }
 
 let booksList = [
